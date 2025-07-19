@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎥 AI Face Tracking & Recording App
 
-## Getting Started
+A real-time **Face Detection and Video Recording** web application built with **Next.js (App Router)**, **Tailwind CSS**, and **face-api.js**. Users can record themselves while tracking their face with visual overlays, and save the video locally using `localStorage`.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## ✨ Features
+
+- ✅ Real-time face detection using `face-api.js` (`tiny_face_detector`)
+- ✅ Live tracking box over detected faces
+- ✅ Start/stop video recording with overlays
+- ✅ Save the video to browser's `localStorage`
+- ✅ Responsive UI with beautiful gradient effects
+- ✅ Built with Next.js App Router + Tailwind CSS
+
+---
+
+## 🚀 How It Works
+- Uses the webcam via navigator.mediaDevices.getUserMedia
+
+- Loads face detection models into browser memory
+
+- Continuously detects faces and draws rectangles using a `canvas` overlay
+
+- Records combined video and canvas using the MediaRecorder API
+
+- Converts video to base64 and stores it in localStorage
+
+---
+## 🗂️ Tech Stack
+- Framework: Next.js 14 App Router
+
+- Styling: Tailwind CSS
+
+- Face Detection: face-api.js
+
+- Video Recording: Native MediaRecorder API
+
+- Storage: Browser's localStorage
+---
+## 📸 Future Improvements
+- Add multiple saved recordings list
+
+ - Use IndexedDB for larger video files
+
+ - Expression/age detection overlays
+
+ - Upload to cloud or backend storage
+
+ ---
+ ## 🧑‍💻 Author
+```
+Developed as part of a 24-hour challenge given by House Of Couton Pvt.Ltd.
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
