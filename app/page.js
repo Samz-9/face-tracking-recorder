@@ -120,7 +120,7 @@ const HeroSection = () => {
             The new best way to hire Talent
           </span>
           <span className="block animate-[fadeInUp_1s_ease-out_1s_both] bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-            'AI Hire Studio'
+            &apos;AI Hire Studio&apos;
           </span>
         </h1>
 
